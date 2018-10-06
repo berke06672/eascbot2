@@ -235,4 +235,4 @@ if (message.content.startsWith(prefix + "fanclub")) {
 }
 });
 
-client.login(process.env.token);
+client.login(process.env.BOT_TOKEN);
