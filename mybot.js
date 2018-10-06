@@ -200,6 +200,9 @@ const embed = new Discord.RichEmbed()
 if (message.content.startsWith(prefix + "twitter")) {
     message.channel.send("https://twitter.com/eascroblox");
 } else
+	if (message.content.startsWith(prefix + "die")) {
+    message.channel.send("Die!");
+} else
 if (message.content.startsWith(prefix + "arena")) {
      message.channel.send("The Beijing Olympic Arena https://media.discordapp.net/attachments/488307727005646858/496289607831257100/image0.png");
 } else
