@@ -235,4 +235,4 @@ if (message.content.startsWith(prefix + "fanclub")) {
 }
 });
 
-client.login("NDk1OTQ1NjgzNzcwMjc3ODg5.DpJdEA.z1lPpsKsGa-QodaO6tkFji4GTqI");
+client.login(process.env.token);
