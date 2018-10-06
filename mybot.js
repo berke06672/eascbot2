@@ -11,7 +11,7 @@ client.on('guildMemberAdd', member => {
     member.guild.channels.get('488363423978225664').send('**' + '@' + member.user.username + '**, has joined the server!');
 	const embed = new Discord.RichEmbed()
   .setTitle("Welcome")
-  .setAuthor("Welcome to server...", "https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
+  .setAuthor('Welcome to server...' + member.user.username , 'https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300')
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
