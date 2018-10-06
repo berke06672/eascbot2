@@ -105,14 +105,14 @@ const embed = new Discord.RichEmbed()
    */
   .setTimestamp()
   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-  .addField("!robloxgroup","!twitter",	)
-   .addField("!arena","!broadcaster",	)
-     .addField("!avatar","!logo",	)
-	   .addField("!vikia","!web",	)
-	     .addField("!invitelink","!runningorder",	)
-		     .addField("!hq","!rules",	)
-			   .addField("!sponsoredby","!fanclub",	)
-			     .addField("!c","Cardboard messages are gives information about participating user. Say !c then put the roblox username.",	)
+  .addField("?robloxgroup","?twitter",	)
+   .addField("?arena","?broadcaster",	)
+     .addField("?avatar","?logo",	)
+	   .addField("?vikia","?web",	)
+	     .addField("?invitelink","?runningorder",	)
+		     .addField("?hq","?rules",	)
+			   .addField("?sponsoredby","?fanclub",	)
+			     .addField("?c","Cardboard messages are gives information about participating user. Say !c then put the roblox username.",	)
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */
