@@ -203,6 +203,9 @@ if (message.content.startsWith(prefix + "twitter")) {
 	if (message.content.startsWith(prefix + "die")) {
     message.channel.send("Die!");
 } else
+	if (message.content.startsWith(prefix + "foundon")) {
+    message.channel.send("08.09.2018");
+} else
 if (message.content.startsWith(prefix + "arena")) {
      message.channel.send("The Beijing Olympic Arena https://media.discordapp.net/attachments/488307727005646858/496289607831257100/image0.png");
 } else
