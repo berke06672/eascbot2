@@ -179,11 +179,11 @@ const embed = new Discord.RichEmbed()
    */
   .setTimestamp()
   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-  .addField("About Berke234443","20 May :flag_tr: Turkish")
+  .addField("About Berke234443","20 May, :flag_tr: Turkish")
   .addField("**EASC History**","First appearance :zero::one:")
-  .addField("Last appearance :zero::one:","**Apperances:**1")
-  .addField("**Best Result:**:zero::one:","**Worst Result**Na/N")
-  .addField(":zero::one::Mor ve Ötesi - Cambaz","**Points:**0 **Points:**0th ")
+  .addField("**Last appearance:** :zero::one:","**Apperances:** :one:")
+  .addField("**Best Result:** :zero::one:","**Worst Result:** Na/N")
+  .addField(":zero::one:: Mor ve Ötesi - Cambaz","**Points:** 0 **Points:** 0th ")
 				   
 
 
