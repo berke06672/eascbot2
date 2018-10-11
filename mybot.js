@@ -4,11 +4,11 @@ const client = new Discord.Client();
 client.on("ready", () => {
   console.log("I am ready!");
 });
-const prefix = "?";
+const prefix = "🎵 ";
 
 const newUsers = [];
 client.on('guildMemberAdd', member => {
-    member.guild.channels.get('488363423978225664').send('**' + '@' + member.user.username + '**, has joined the server!');
+    member.guild.channels.get('488363423978225664').send('**' + '@' + member.user.username + '**, has joined the server! Party!...');
 	const embed = new Discord.RichEmbed()
   .setTitle("Welcome")
   .setAuthor("Welcome to server..." + member.user.username , "https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
@@ -39,7 +39,7 @@ client.on('guildMemberAdd', member => {
 });
 
 client.on('guildMemberRemove', member => {
-    member.guild.channels.get('488363423978225664').send('**' + member.user.username + '**, has left the server');
+    member.guild.channels.get('488363423978225664').send('**' + member.user.username + '**, has left the server. Rest in peace...');
     //
 });
 
