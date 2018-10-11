@@ -190,6 +190,34 @@ const embed = new Discord.RichEmbed()
   message.channel.send({embed});
 
   } else
+	  	  if (message.content.startsWith(prefix + "c!gabys")) {
+const embed = new Discord.RichEmbed()
+  .setTitle("📁 Gabys2005")
+  .setAuthor("About Gabys2005", "https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
+  /*
+   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
+   */
+  .setColor(0x01AE86)
+  .setDescription("Executive Director of Earthvision Song Contest")
+  .setFooter("by EASC", "https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
+  .setImage("https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
+  .setThumbnail("https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
+  /*
+   * Takes a Date object, defaults to current date.
+   */
+  .setTimestamp()
+  .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
+  .addField(":bust_in_silhouette: About Gabys2005","?, :flag_pl: Polish")
+  .addField("**EASC History**","First appearance :zero::one:")
+  .addField("**Last appearance:** :zero::one:","**Apperances:** :one:")
+  .addField("**Best Result:** :zero::one:","**Worst Result:** Na/N")
+  .addField(":zero::one: : Mans Zelmerlöw - Heroes ","**Points:** 0 **Points:** 0th ")
+				   
+
+
+  message.channel.send({embed});
+
+  } else
 	if (message.content.startsWith(prefix + "bot")) {
     message.channel.send("thanks for helping me");
   }  else
