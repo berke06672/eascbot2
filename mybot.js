@@ -162,7 +162,7 @@ const embed = new Discord.RichEmbed()
   message.channel.send({embed});
 
   } else
-	  	  if (message.content.startsWith(prefix + "cberke")) {
+	  	  if (message.content.startsWith(prefix + "c!berke")) {
 const embed = new Discord.RichEmbed()
   .setTitle("Berke234443")
   .setAuthor("About Berke234443", "https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
@@ -179,9 +179,11 @@ const embed = new Discord.RichEmbed()
    */
   .setTimestamp()
   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-  .addField("First appearance :zero::one:","Last appearance :zero::one:"	)
-
-  
+  .addField("About Berke234443","20 May :flag_tr: Turkish")
+  .addField("**EASC History**","First appearance :zero::one:")
+  .addField("Last appearance :zero::one:","**Apperances:**1")
+  .addField("**Best Result:**:zero::one:","**Worst Result**Na/N")
+  .addField(":zero::one::Mor ve Ötesi - Cambaz","**Points:**0 **Points:**0th ")
 				   
 
 
