@@ -162,6 +162,34 @@ const embed = new Discord.RichEmbed()
   message.channel.send({embed});
 
   } else
+	    if (message.content.startsWith(prefix + "staffteam")) {
+const embed = new Discord.RichEmbed()
+  .setTitle("Staff Team")
+  .setAuthor("You said help to me then i'm doing,", "https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
+  /*
+   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
+   */
+  .setColor(0x01AE86)
+  .setDescription("our Staff Team since 14.10.2018")
+  .setFooter("by Berke234443", "https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
+  .setImage("https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
+  .setThumbnail("https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
+  /*
+   * Takes a Date object, defaults to current date.
+   */
+  .setTimestamp()
+  .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
+  .addField("**Executive Supervisor** ","Berke234443","Since September 2018")
+  .addField("**Executive Supervisor** ","DoodlayRed12")
+.addField("**Executive Director** ","Gabys2005") 
+.addField("**Executive Director** ","Daxjd")
+.addField("**Event Supervisor** ","XXKindProXX")
+.addField("**Executive Producer** ","Nwisy, NoisyGrAntonlol")
+.addField("**Event Organiser** ","EstoniaHuman")
+.addField("**Visual Designer** ","DarticFernandez")
+  message.channel.send({embed});
+
+  } else
 	  	  if (message.content.startsWith(prefix + "c!berke")) {
 const embed = new Discord.RichEmbed()
   .setTitle("📁 Berke234443")
