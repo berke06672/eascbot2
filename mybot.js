@@ -6,6 +6,25 @@ client.on("ready", () => {
   console.log("I am ready!");
 });
 const prefix = "🎵 ";
+client.on('messageDelete', async (message) => {
+  const logs = message.guild.channels.find(channel => channel.name === "logs");
+  if (message.guild.me.hasPermission('MANAGE_CHANNELS') && !logs) {
+    message.guild.createChannel('logs', 'text');
+  }
+  if (!message.guild.me.hasPermission('MANAGE_CHANNELS') && !logs) { 
+    console.log('Umm...')
+  }  
+  let user = ""
+    if (entry.extra.channel.id === message.channel.id
+      && (entry.target.id === message.author.id)
+      && (entry.createdTimestamp > (Date.now() - 5000))
+      && (entry.extra.count >= 1)) {
+    user = entry.executor.username
+  } else { 
+    user = message.author.username
+  }
+  logs.send(`A message was deleted in ${message.channel.name} by ${user}`);
+})
 
 const newUsers = [];
 client.on('guildMemberAdd', member => {
@@ -325,31 +344,7 @@ if (message.content.startsWith(prefix + "hq")) {
 
 } else
 	
-	if (message.content.startsWith(prefix + "infobot")) {
-const embed = new Discord.RichEmbed()
-  .setTitle("About EASC Bot")
-  .setAuthor("EASC Bot", "https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
-  /*
-   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
-   */
-  .setColor(0x01AE86)
-  .setDescription("About by EASC BOT:")
-  .setFooter("by Anime Hacker Fans", "https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
-  .setImage("https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
-  .setThumbnail("https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
-  /*
-   * Takes a Date object, defaults to current date.
-   */
-  .setTimestamp()
-  .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
- .addField("Bot Name", bot.user.username)
- .addField("Created On", bot.user.createdAt)
- .addField("Prefix", "🎵")
 
-  message.channel.send({embed});
-
-
-} else
 	if (message.content.startsWith(prefix + "can i count on you")) {
   message.channel.send("Yes,i love anime and anarchism https://img-s2.onedio.com/id-54099e649ad9d4867cb8c723/rev-0/w-500/s-777207590e5ab8495cecfe693326e639c68dba92.jpg");
 
