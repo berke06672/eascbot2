@@ -348,13 +348,6 @@ const embed = new Discord.RichEmbed()
 
   message.channel.send({embed});
 
-    let botembed = new Discord.RichEmbed()
-    .setDescription("Bot Information")
-    .setColor("#15f153")
-    .addField("Bot Name", bot.user.username)
-    .addField("Created On", bot.user.createdAt);
-
-    message.channel.send(botembed);
 
 } else
 	if (message.content.startsWith(prefix + "can i count on you")) {
