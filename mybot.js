@@ -1,3 +1,4 @@
+//i already changed the token
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
