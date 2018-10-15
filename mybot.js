@@ -324,6 +324,10 @@ if (message.content.startsWith(prefix + "hq")) {
   message.channel.send("https://www.roblox.com/games/2360537652/EarthVision-Song-Contest-The-Headquarter");
 
 } else
+	if (message.content.startsWith(prefix + "kate")) {
+  message.channel.send("I believe in :kate:");
+
+} else
 	if (message.content.startsWith(prefix + "can i count on you")) {
   message.channel.send("Yes,i love anime and anarchism https://img-s2.onedio.com/id-54099e649ad9d4867cb8c723/rev-0/w-500/s-777207590e5ab8495cecfe693326e639c68dba92.jpg");
 
