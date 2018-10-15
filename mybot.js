@@ -324,6 +324,10 @@ if (message.content.startsWith(prefix + "hq")) {
   message.channel.send("https://www.roblox.com/games/2360537652/EarthVision-Song-Contest-The-Headquarter");
 
 } else
+	if (message.content.startsWith(prefix + "ping me pls")) {
+  message.channel.send(discord.Message.author);
+
+} else
 	if (message.content.startsWith(prefix + "kate")) {
   message.channel.send("I believe in :kate-1:");
 
