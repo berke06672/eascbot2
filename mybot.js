@@ -326,6 +326,27 @@ if (message.content.startsWith(prefix + "hq")) {
 } else
 	
 	if (message.content.startsWith(prefix + "infobot")) {
+const embed = new Discord.RichEmbed()
+  .setTitle("About EASC Bot")
+  .setAuthor("EASC Bot", "https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
+  /*
+   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
+   */
+  .setColor(0x01AE86)
+  .setDescription("About by EASC BOT:")
+  .setFooter("by Anime Hacker Fans", "https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
+  .setImage("https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
+  .setThumbnail("https://media.discordapp.net/attachments/488307727005646858/496286658958721034/express_urself_final11_-_Kopya_2.jpg?width=295&height=300")
+  /*
+   * Takes a Date object, defaults to current date.
+   */
+  .setTimestamp()
+  .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
+ .addField("Bot Name", bot.user.username)
+ .addField("Created On", bot.user.createdAt)
+ .addField("Prefix", "🎵")
+
+  message.channel.send({embed});
 
     let botembed = new Discord.RichEmbed()
     .setDescription("Bot Information")
