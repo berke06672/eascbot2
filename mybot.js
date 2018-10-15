@@ -325,7 +325,7 @@ if (message.content.startsWith(prefix + "hq")) {
 
 } else
 	if (message.content.startsWith(prefix + "kate")) {
-  message.channel.send("I believe in :kate:");
+  message.channel.send("I believe in :kate-1:");
 
 } else
 	if (message.content.startsWith(prefix + "can i count on you")) {
