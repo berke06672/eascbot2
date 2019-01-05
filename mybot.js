@@ -313,7 +313,7 @@ if (message.content.startsWith(prefix + "twitter")) {
 } else
 	if (message.content.startsWith(prefix + "xxpls")) {
     message.channel.send("XX PLS GAVE THIS SHIT TO BERKE ELSE I WILL DEMOTE U IN EASC OMG WHAT A STUPID MAN @XxTheKindProxX#7651");
-			msg.guild.members.get(bot.user.id).setNickname("Dyno")
+			
 
 } else
 	if (message.content.startsWith(prefix + "foundon")) {
